@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: gray" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <bottom>
+      <AnchorPane prefHeight="32.0" prefWidth="600.0" style="-fx-background-color: #212F3C;" BorderPane.alignment="CENTER">
+            <Button fx:id="playButton" layoutX="462.0" layoutY="2.0" mnemonicParsing="false" onAction="#playButton"  styleClass="button" text="Play/ Pause" />
+            <Button fx:id="decrement2" layoutX="319.0" layoutY="2.0" mnemonicParsing="false" onAction="#decrement2"  styleClass="button" text="&lt;&lt;" />
+            <Button fx:id="decrement" layoutX="363.0" layoutY="2.0" mnemonicParsing="false" onAction="#decrement"  styleClass="button" text="&lt;" />
+            <Button fx:id="increment" layoutX="548.0" layoutY="2.0" mnemonicParsing="false" onAction="#increment"  styleClass="button" text="&gt;" />
+            <Button fx:id="increment2" layoutX="580.0" layoutY="2.0" mnemonicParsing="false" onAction="#increment2" styleClass="button" text="&gt;&gt;" />
+            <Button  layoutX="397.0" layoutY="2.0" mnemonicParsing="false" onAction="#reverse"  styleClass="button" text="Reverse" />
+      </AnchorPane>
+   </bottom>
+   <center>
+      <ImageView fx:id="view" fitHeight="738.0" fitWidth="1001.0" pickOnBounds="true" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="32.0" prefWidth="1000.0" style="-fx-background-color: #212F3C;" BorderPane.alignment="CENTER">
+            <Button layoutX="974.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit"  text="X" styleClass="button" />
+      </AnchorPane>
+   </top>
+</BorderPane>
